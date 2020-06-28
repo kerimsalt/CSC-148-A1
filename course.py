@@ -167,3 +167,5 @@ if __name__ == '__main__':
     s3 = Student(3, 'Mario')
     assert sort_students([s1, s3, s2], 'id') == [s1, s2, s3]
     assert sort_students([s1, s2, s3], 'name') == [s2, s3, s1]
+    print("Test1")
+    print("Test2")
