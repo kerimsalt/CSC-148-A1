@@ -92,7 +92,7 @@ class Grouper:
         === Precondition ===
         group_size > 1
         """
-        # TODO: complete the body of this method
+        self.group_size = group_size
 
     def make_grouping(self, course: Course, survey: Survey) -> Grouping:
         """ Return a grouping for all students in <course> using the questions
