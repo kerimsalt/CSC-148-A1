@@ -158,7 +158,7 @@ class RandomGrouper(Grouper):
         members if that is required to make sure all students in <course> are
         members of a group.
         """
-        # TODO: complete the body of this method
+        pass
 
 
 class GreedyGrouper(Grouper):
