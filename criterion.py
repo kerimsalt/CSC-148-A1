@@ -10,7 +10,7 @@ Copying for purposes other than this use is expressly prohibited.
 All forms of distribution of this code, whether as given or with
 any changes, are expressly prohibited.
 
-Authors: Misha Schwartz, Mario Badr, Christine Murad, Diane Horton, 
+Authors: Misha Schwartz, Mario Badr, Christine Murad, Diane Horton,
 Sophia Huynh and Jaisie Sin
 
 All of the files in this directory and all subdirectories are:
@@ -22,6 +22,7 @@ Sophia Huynh and Jaisie Sin
 This file contains classes that describe different types of criteria used to
 evaluate a group of answers to a survey question.
 """
+
 from __future__ import annotations
 from typing import TYPE_CHECKING, List
 if TYPE_CHECKING:
@@ -54,8 +55,8 @@ class Criterion:
         raise NotImplementedError
 
 
-class HomogeneousCriterion:
-    # TODO: make this a child class of another class defined in this file
+class HomogeneousCriterion(Criterion):
+
     """
     A criterion used to evaluate the quality of a group based on the group
     members' answers for a given question.
@@ -81,10 +82,23 @@ class HomogeneousCriterion:
         === Precondition ===
         len(answers) > 0
         """
-        # TODO: complete the body of this method
+        for ans in answers:
+            if not ans.is_valid(question):
+                raise InvalidAnswerError
+        if len(answers) == 1:
+            return 1.0
+
+        sum_score = 0
+        score_len = 0
+        for i in range(len(answers)-1):
+            for j in range(i+1, len(answers)):
+                sum_score += question.get_similarity(answers[i], answers[j])
+                score_len += 1
+
+        return sum_score / score_len
 
 
-class HeterogeneousCriterion:
+class HeterogeneousCriterion(HomogeneousCriterion):
     # TODO: make this a child class of another class defined in this file
     """ A criterion used to evaluate the quality of a group based on the group
     members' answers for a given question.
@@ -110,10 +124,11 @@ class HeterogeneousCriterion:
         === Precondition ===
         len(answers) > 0
         """
-        # TODO: complete the body of this method
+
+        return 1 - super().score_answers(question, answers)
 
 
-class LonelyMemberCriterion:
+class LonelyMemberCriterion(Criterion):
     # TODO: make this a child class of another class defined in this file
     """ A criterion used to measure the quality of a group of students
     according to the group members' answers to a question. This criterion
@@ -134,11 +149,27 @@ class LonelyMemberCriterion:
 
         Raise InvalidAnswerError if any answer in <answers> is not a valid
         answer to <question>.
-
         === Precondition ===
         len(answers) > 0
         """
-        # TODO: complete the body of this method
+        for ans in answers:
+            if not ans.is_valid(question):
+                raise InvalidAnswerError
+        if len(answers) == 1:
+            return 0.0
+
+        cont = [c.content for c in answers]
+        dict1 = {}
+        for c in cont:
+            if c not in dict1.keys():
+                dict1[c] = 1
+            else:
+                dict1[c] += 1
+
+        for key in dict1:
+            if dict1[key] == 1:
+                return 0.0
+        return 1.0
 
 
 if __name__ == '__main__':
