@@ -95,7 +95,7 @@ class HomogeneousCriterion(Criterion):
                 sum_score += question.get_similarity(answers[i], answers[j])
                 score_len += 1
 
-        return sum_score / score_len
+        return round((sum_score / score_len), 2)
 
 
 class HeterogeneousCriterion(HomogeneousCriterion):

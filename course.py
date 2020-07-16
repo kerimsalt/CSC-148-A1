@@ -22,8 +22,10 @@ Sophia Huynh and Jaisie Sin
 This file contains classes that describe a university course and the students
 who are enrolled in these courses.
 """
+
 from __future__ import annotations
 from typing import TYPE_CHECKING, List, Tuple, Optional
+from copy import copy
 if TYPE_CHECKING:
     from survey import Answer, Survey, Question
     from copy import copy
@@ -129,12 +131,14 @@ class Course:
         If adding any student would violate a representation invariant,
         do not add any of the students in <students> to the course.
         """
+
         new_ids = [student.id for student in students]
         new_names = [stu.name for stu in students]
         old_ids = [stu.id for stu in self.students]
         if (len(new_ids) != len(set(new_ids))) or ('' in new_names) or \
                 (len(new_ids + old_ids) != len(set(new_ids + old_ids))):
             return None
+        self.students.extend(students)
 
     def all_answered(self, survey: Survey) -> bool:
         """
