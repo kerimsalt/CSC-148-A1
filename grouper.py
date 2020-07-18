@@ -53,8 +53,10 @@ def slice_list(lst: List[Any], n: int) -> List[List[Any]]:
     >>> slice_list(['a', 1, 6.0, False], 3) == [['a', 1, 6.0], [False]]
     True
     """
+    if lst is None:
+        return []
 
-    if len(lst) == 0 or type(lst) is None or lst is None:
+    if len(lst) == 0:
         return []
     sl_lst = []
     i = 0
@@ -303,11 +305,10 @@ class WindowGrouper(Grouper):
         """
         stu_lists = list(course.get_students())
         grouping = Grouping()
-
+        i = 0
         while len(stu_lists) >= self.group_size:
             windows_students = windows(stu_lists, self.group_size)
-            for i in range(len(windows_students)):
-
+            while i <= len(windows_students):
                 cur_window = windows_students[i]
                 next_window = windows_students[(i+1) % (len(windows_students))]
                 if survey.score_students(cur_window) >= \
@@ -315,10 +316,12 @@ class WindowGrouper(Grouper):
                     grouping.add_group(Group(cur_window))
                     for elt in cur_window:
                         stu_lists.remove(elt)
-                        windows_students = windows(stu_lists, self.group_size)
-            break
+                    break
+                i += 1
+
         if len(stu_lists) != 0:
             grouping.add_group(Group(stu_lists))
+        return grouping
 
 
 class Group:

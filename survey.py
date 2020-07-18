@@ -134,6 +134,9 @@ class MultipleChoiceQuestion(Question):
         """
         return float(answer1.content == answer2.content)
 
+    def get_options(self):
+        return self._options
+
 
 class NumericQuestion(Question):
     # TODO: make this a child class of another class defined in this file
@@ -300,16 +303,23 @@ class CheckboxQuestion(MultipleChoiceQuestion):
         """
         # TODO: complete the body of this method
 
-    '''
     def validate_answer(self, answer: Answer) -> bool:
-    """
-    Return True iff <answer> is a valid answer to this question.
+        """
+        Return True iff <answer> is a valid answer to this question.
 
-    An answer is valid iff its content is a non-empty list containing
-    unique possible answers to this question.
-    """
-    # TODO: complete the body of this method
-    '''
+        An answer is valid iff its content is a non-empty list containing
+        unique possible answers to this question.
+        """
+        if len(answer.content) == 0:
+            print("no answer")
+            return False
+        answer_set = set(answer.content)
+
+        if len(answer_set) != len(answer.content):
+            print("unique")
+            return False
+
+        return not answer.content in self.get_options()
 
     def get_similarity(self, answer1: Answer, answer2: Answer) -> float:
         """
@@ -496,7 +506,7 @@ class Survey:
             survey
         """
         if len(self._questions) == 0:
-            return 0.0
+            return 0.00
         try:
             count = 0
             sum_score = 0
@@ -509,10 +519,10 @@ class Survey:
                                                      student_answers)
                 sum_score += temp_score*temp_weight
                 count += 1
-            return sum_score/count
+            return round((sum_score/count),2)
 
         except InvalidAnswerError:
-            return 0.0
+            return 0.00
 
     def score_grouping(self, grouping: Grouping) -> float:
         """ Return a score for <grouping> calculated based on the answers of
