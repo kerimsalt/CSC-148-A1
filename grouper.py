@@ -58,6 +58,7 @@ def slice_list(lst: List[Any], n: int) -> List[List[Any]]:
 
     if len(lst) == 0:
         return []
+
     sl_lst = []
     i = 0
     num_slice = int(len(lst) / n)
@@ -186,9 +187,15 @@ class RandomGrouper(Grouper):
         members if that is required to make sure all students in <course> are
         members of a group.
         """
-        random_lists = random.shuffle(list(course.get_students()))
+        print("HHHHHHHHHHHHHHHH")
+        print(list(course.get_students()))
+        #random_lists = random.shuffle(list(course.get_students()))
+        random_lists = list(course.get_students())
         grouping = Grouping()
+        print(type(random_lists))
+        print(len(random_lists))
         rand_slices = slice_list(random_lists, self.group_size)
+
         for lst in rand_slices:
             grouping.add_group(Group(lst))
         return grouping
@@ -403,8 +410,12 @@ class Grouping:
         You can choose the precise format of this string.
         """
         str1 = ''
+        if len(self._groups) == 0:
+            return str1
+
         for grp in self._groups:
             str1 += grp.__str__() + "\n"
+        print(str1)
         return str1[:-1]
 
     def add_group(self, group: Group) -> bool:
@@ -418,11 +429,18 @@ class Grouping:
         """
         if len(group) == 0:
             return False
+
         student_ids = [stu.id for stu in group.get_members()]
+        student_id_set = set(student_ids)
+
+        if len(student_ids) != len(student_id_set):
+            return False
+
         for grp in self._groups:
             for st1 in grp.get_members():
                 if st1.id in student_ids:
                     return False
+        self._groups.append(group)
         return True
 
     def get_groups(self) -> List[Group]:

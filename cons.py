@@ -14,3 +14,12 @@ while i < 9:
 l1 = [1,2,3]
 l2 = [[1,2,3], 3, 6]
 print(l1 in l2)
+
+l1 = [1,2,3]
+s1 = '[1,2,3]'
+print(str(l1) == s1)
+d1 = {'a': 1, 'b': 2}
+ls = d1.values()
+print(ls)
+print(type(ls))
+print('a' in d1)

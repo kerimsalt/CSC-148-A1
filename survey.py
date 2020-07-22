@@ -175,7 +175,8 @@ class NumericQuestion(Question):
 
         You can choose the precise format of this string.
         """
-        return 'min:' + str(self._min) + 'max:' + str(self._max)
+
+        return self.text + str(self._min) + str(self._max)
 
     def validate_answer(self, answer: Answer) -> bool:
         """
@@ -211,7 +212,7 @@ class NumericQuestion(Question):
         """
         dif = abs(answer1.content - answer2.content)
         max_min_dif = self._max - self._min
-        return 1.0 - (dif-max_min_dif)
+        return 1.0 - (dif/max_min_dif)
 
 
 class YesNoQuestion(MultipleChoiceQuestion):
@@ -301,7 +302,7 @@ class CheckboxQuestion(MultipleChoiceQuestion):
 
         You can choose the precise format of this string.
         """
-        # TODO: complete the body of this method
+        return super().__str__()
 
     def validate_answer(self, answer: Answer) -> bool:
         """
@@ -311,15 +312,14 @@ class CheckboxQuestion(MultipleChoiceQuestion):
         unique possible answers to this question.
         """
         if len(answer.content) == 0:
-            print("no answer")
             return False
         answer_set = set(answer.content)
 
         if len(answer_set) != len(answer.content):
-            print("unique")
             return False
 
-        return not answer.content in self.get_options()
+        options_set = set(self.get_options())
+        return answer_set <= options_set
 
     def get_similarity(self, answer1: Answer, answer2: Answer) -> float:
         """
@@ -415,7 +415,7 @@ class Survey:
         Return True iff there is a question in this survey with the same
         id as <question>.
         """
-        return question in self._questions
+        return question.id in self._questions
 
     def __str__(self) -> str:
         """
@@ -424,7 +424,8 @@ class Survey:
 
         You can choose the precise format of this string.
         """
-        lst = [str(st) for st in list(self._questions.values())]
+
+        lst = [str(st) for st in self.get_questions()]
         return str(lst)
 
     def get_questions(self) -> List[Question]:
@@ -542,6 +543,8 @@ class Survey:
         """
         count = 0
         sum_g_score = 0
+        if len(grouping.get_groups()) == 0:
+            return sum_g_score
         for group in grouping.get_groups():
             sum_g_score += self.score_students(group.get_members())
             count += 1
