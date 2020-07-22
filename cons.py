@@ -1,3 +1,4 @@
+import sys
 k = 3.34343532
 print(round(k, 2))
 lst = None
@@ -23,3 +24,6 @@ ls = d1.values()
 print(ls)
 print(type(ls))
 print('a' in d1)
+
+min1 = sys.maxsize * -1
+print(min1)

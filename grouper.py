@@ -241,31 +241,39 @@ class GreedyGrouper(Grouper):
         required to make sure all students in <course> are members of a group.
         """
         greedy_stud = list(course.get_students())
-        grouping = Grouping()
-        cur = Group([])
-        best_candidate = greedy_stud[0]
-        new_ = []
-        while len(greedy_stud) >= self.group_size:
-            temp_max = sys.maxsize * -1
-            for candidate in greedy_stud:
-                lst1 = copy(cur)
+        GRp1 = Grouping()
+        GRp1.add_group(Group([greedy_stud[1]]))
+        print(survey.score_grouping(GRp1))
+        print("\n")
+        GRp2 = Grouping()
+        GRp2.add_group(Group([greedy_stud[0]]))
+        print(survey.score_grouping(GRp2))
+        while len(greedy_stud) > 0:
+            grouping = Grouping()
+            cur = Group([greedy_stud[0]])
+            best_candidate = greedy_stud[0]
+            new_ = []
+            while len(greedy_stud) >= self.group_size:
+                #temp_max = sys.maxsize * -1
+                for candidate in greedy_stud:
+                    lst1 = copy(cur)
 
-                temp = lst1.get_members()
-                temp.append(candidate)
-                temp_score = survey.score_students(temp)
-                if temp_score > temp_max:
-                    best_candidate = candidate
-                    temp_max = temp_score
-            new_ = cur.get_members()
-            new_.append(best_candidate)
-            greedy_stud.remove(best_candidate)
-            cur = Group(new_)
-            if len(cur.get_members()) == self.group_size:
-                grouping.add_group(Group(new_))
-                cur = Group([])
-        if len(greedy_stud) != 0:
-            grouping.add_group(Group(greedy_stud))
-        return grouping
+                    temp = lst1.get_members()
+                    temp.append(candidate)
+                    temp_score = survey.score_students(temp)
+                    if temp_score > temp_max:
+                        best_candidate = candidate
+                        temp_max = temp_score
+                new_ = cur.get_members()
+                new_.append(best_candidate)
+                greedy_stud.remove(best_candidate)
+                cur = Group(new_)
+                if len(cur.get_members()) == self.group_size:
+                    grouping.add_group(Group(new_))
+                    cur = Group([])
+            if len(greedy_stud) != 0:
+                grouping.add_group(Group(greedy_stud))
+            return grouping
 
 
 class WindowGrouper(Grouper):
@@ -369,7 +377,7 @@ class Group:
         """
         str1 = ''
         for i in range(len(self._members)):
-            str1 += (str(i) + 'th' + 'student' + self._members[i].name)
+            str1 += (str(i) + 'th student ' + self._members[i].name + ' ')
         return str1
 
     def get_members(self) -> List[Student]:
