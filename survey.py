@@ -480,10 +480,16 @@ class Survey:
         If <question>.id does not occur in this survey, do not set the <weight>
         and return False instead.
         """
-        if question.id not in self._questions:
-            return False
-        self._criteria[question.id] = criterion
-        return True
+        if isinstance(question, Question):
+            if question.id not in self._questions:
+                return False
+            self._criteria[question.id] = criterion
+            return True
+        else:
+            if question not in self._questions:
+                return False
+            self._criteria[question.id] = criterion
+            return True
 
     def score_students(self, students: List[Student]) -> float:
         """
