@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e15dd14-639e-44e9-a829-eca97b4f0d6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +69,8 @@
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="101">
-                <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+              <first_editor relative-caret-position="190">
+                <caret line="110" column="26" lean-forward="true" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
               </first_editor>
               <second_editor relative-caret-position="-57" />
             </state>
@@ -82,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/course.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="-589">
+              <first_editor relative-caret-position="-475">
                 <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
               </first_editor>
               <second_editor relative-caret-position="-57" />
@@ -94,8 +93,8 @@
         <entry file="file://$PROJECT_DIR$/survey.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="-117">
-                <caret line="345" column="9" selection-start-line="345" selection-end-line="345" selection-end-column="9" />
+              <first_editor relative-caret-position="325">
+                <caret line="318" column="24" lean-forward="true" selection-start-line="318" selection-start-column="24" selection-end-line="318" selection-end-column="24" />
               </first_editor>
               <second_editor relative-caret-position="-57" />
             </state>
@@ -113,7 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>no answ</find>
       <find>test_va</find>
       <find>_options</find>
       <find>validate</find>
@@ -143,6 +141,7 @@
       <find>class An</find>
       <find>class Qu</find>
       <find>class Ans</find>
+      <find>validate_answer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -305,12 +304,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_tests_TestCourse_test_enroll_students - 2020.07.23 at 18h 53m 59s.xml">
-      <configuration name="pytest for tests.TestCourse.test_enroll_students" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_tests_TestCourse_test_get_students - 2020.07.23 at 19h 03m 30s.xml">
-      <configuration name="pytest for tests.TestCourse.test_get_students" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_tests_TestCourse_test_get_students - 2020.07.23 at 19h 04m 17s.xml">
       <configuration name="pytest for tests.TestCourse.test_get_students" configurationId="tests" />
     </history-entry>
@@ -335,6 +328,12 @@
     <history-entry file="pytest_for_tests_TestAnswer_test_is_valid - 2020.07.26 at 10h 46m 22s.xml">
       <configuration name="pytest for tests.TestAnswer.test_is_valid" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_tests_TestAnswer_test_is_valid - 2020.07.26 at 10h 55m 27s.xml">
+      <configuration name="pytest for tests.TestAnswer.test_is_valid" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_tests_TestAnswer_test_is_valid - 2020.07.26 at 10h 56m 15s.xml">
+      <configuration name="pytest for tests.TestAnswer.test_is_valid" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
@@ -345,7 +344,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32624114" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34397164" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,6 +435,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/course.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="-475">
+            <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
+          </first_editor>
+          <second_editor relative-caret-position="-57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/criterion.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -446,21 +455,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/course.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-589">
-            <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
-          </first_editor>
-          <second_editor relative-caret-position="-57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/survey.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="-117">
-            <caret line="345" column="9" selection-start-line="345" selection-end-line="345" selection-end-column="9" />
+          <first_editor relative-caret-position="325">
+            <caret line="318" column="24" lean-forward="true" selection-start-line="318" selection-start-column="24" selection-end-line="318" selection-end-column="24" />
           </first_editor>
           <second_editor relative-caret-position="-57" />
         </state>
@@ -469,8 +468,8 @@
     <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="101">
-            <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <first_editor relative-caret-position="190">
+            <caret line="110" column="26" lean-forward="true" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
           </first_editor>
           <second_editor relative-caret-position="-57" />
         </state>

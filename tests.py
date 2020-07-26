@@ -106,10 +106,12 @@ class TestAnswer:
         q1 = questions[0]
         q2 = questions[1]
         q3 = questions[2]
+        q4 = questions[3]
 
         a1 = answers[0][0]
         a2 = answers[1][1]
-        a3 = answers[2][3]
+        a3 = answers[0][2]
+        a4 = survey.Answer(9)
 
         stu1 = students[0]
         stu1.set_answer(q1, a1)
@@ -120,6 +122,10 @@ class TestAnswer:
         stu3 = students[2]
         stu3.set_answer(q3, a3)
 
+        stu4 = students[3]
+        stu4.set_answer(q4, a4)
+
         assert a1.is_valid(q1)
         assert a2.is_valid(q2)
-        assert a3.is_valid(q3) is False
+        assert a3.is_valid(q3)
+        assert a4.is_valid(q4) is False
