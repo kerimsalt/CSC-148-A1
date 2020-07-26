@@ -91,5 +91,35 @@ class TestCourse:
         assert course1.get_students() == tuple(stu_list)
 
 
+class TestHomogeneousCriterion:
+    def test_score_answer(self, questions, answers):
+        pass
 
 
+class TestHeterogeneousCriterion:
+    def test_score_answer(self, questions, answers):
+        pass
+
+
+class TestAnswer:
+    def test_is_valid(self, questions, answers, students):
+        q1 = questions[0]
+        q2 = questions[1]
+        q3 = questions[2]
+
+        a1 = answers[0][0]
+        a2 = answers[1][1]
+        a3 = answers[2][3]
+
+        stu1 = students[0]
+        stu1.set_answer(q1, a1)
+
+        stu2 = students[1]
+        stu2.set_answer(q2, a2)
+
+        stu3 = students[2]
+        stu3.set_answer(q3, a3)
+
+        assert a1.is_valid(q1)
+        assert a2.is_valid(q2)
+        assert a3.is_valid(q3) is False
