@@ -101,8 +101,19 @@ class TestHeterogeneousCriterion:
         pass
 
 
+class TestLonelyMemberCriterion:
+    def test_score_answer(self, questions, answers):
+        pass
+
+
 class TestAnswer:
     def test_is_valid(self, questions, answers, students):
+        """
+        :param questions:
+        :param answers:
+        :param students:
+        :return:
+        """
         q1 = questions[0]
         q2 = questions[1]
         q3 = questions[2]
@@ -129,3 +140,44 @@ class TestAnswer:
         assert a2.is_valid(q2)
         assert a3.is_valid(q3)
         assert a4.is_valid(q4) is False
+
+
+class TestMultipleChoiceQuestion:
+    def test_get_similarity(self, questions, answers, students):
+        """
+        q2 = MultipleChoiceQuestion(2, ' Multiple Question 2', ['a', 'b'])
+        :param questions:
+        :param answers:
+        :param students:
+        :return:
+        """
+        q1 = questions[1]
+        q2 = survey.MultipleChoiceQuestion(3, 'hh', ['c, d'])
+        q3 = survey.MultipleChoiceQuestion(3, 'Multiple Question 2', ['a, d'])
+
+        a1 = survey.Answer('aa')
+        a2 = survey.Answer('bb')
+        a3 = survey.Answer('aa')
+        a4 = survey.Answer('a')
+        a5 = survey.Answer(' ')
+        assert q1.get_similarity(a1, a3) == 1
+        assert q1.get_similarity(a1, a2) == 0
+        assert q1.get_similarity(a1, a4) == 0
+        assert q1.get_similarity(a1, a5) == 0
+
+
+
+
+class TestNumericQuestion:
+    def test_get_similarity(self, questions, answers, students):
+        pass
+
+
+class TestCheckboxQuestion:
+    def test_get_similarity(self, questions, answers, students):
+        pass
+
+
+class TestYesNoQuestion:
+    def test_get_similarity(self, questions, answers, students):
+        pass
