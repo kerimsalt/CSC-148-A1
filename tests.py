@@ -91,21 +91,6 @@ class TestCourse:
         assert course1.get_students() == tuple(stu_list)
 
 
-class TestHomogeneousCriterion:
-    def test_score_answer(self, questions, answers):
-        pass
-
-
-class TestHeterogeneousCriterion:
-    def test_score_answer(self, questions, answers):
-        pass
-
-
-class TestLonelyMemberCriterion:
-    def test_score_answer(self, questions, answers):
-        pass
-
-
 class TestAnswer:
     def test_is_valid(self, questions, answers, students):
         """
@@ -199,4 +184,33 @@ class TestCheckboxQuestion:
 
 class TestYesNoQuestion:
     def test_get_similarity(self, questions, answers, students):
+        """
+        It inherits from checkbox question so it is not necessary
+        :param questions:
+        :param answers:
+        :param students:
+        :return:
+        """
+        pass
+
+
+class TestHomogeneousCriterion:
+    def test_score_answer(self, questions, answers):
+        q1 = survey.MultipleChoiceQuestion(1, 'MC2', ['a', 'b'])
+        a1 = survey.Answer('a')
+        a2 = survey.Answer('b')
+        a3 = survey.Answer('a')
+
+        lst_ans = [a1, a2, a3]
+        c1 = criterion.HomogeneousCriterion()
+        assert c1.score_answers(q1, lst_ans) == 0.33
+
+
+class TestHeterogeneousCriterion:
+    def test_score_answer(self, questions, answers):
+        pass
+
+
+class TestLonelyMemberCriterion:
+    def test_score_answer(self, questions, answers):
         pass
