@@ -210,9 +210,15 @@ class NumericQuestion(Question):
         === Precondition ===
         <answer1> and <answer2> are both valid answers to this question
         """
+        a1 = answer1.content
+        a2 = answer2.content
+        max1 = self._max
+        min1 = self._min
+        if a1 > max1 or a2 > max1 or a1 < min1 or a2 < min1:
+            return False
         dif = abs(answer1.content - answer2.content)
         max_min_dif = self._max - self._min
-        return 1.0 - (dif/max_min_dif)
+        return round(1.0 - (dif/max_min_dif), 2)
 
 
 class YesNoQuestion(MultipleChoiceQuestion):
@@ -339,8 +345,10 @@ class CheckboxQuestion(MultipleChoiceQuestion):
         <answer1> and <answer2> are both valid answers to this question
         """
         un_ion = answer1.content + answer2.content
+        if len(set(un_ion)) == 0:
+            return False
         intersection = len(un_ion) - len(set(un_ion))
-        return intersection / len(set(un_ion))
+        return round(intersection / len(set(un_ion)), 2)
 
 
 class Answer:

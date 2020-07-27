@@ -166,16 +166,35 @@ class TestMultipleChoiceQuestion:
         assert q1.get_similarity(a1, a5) == 0
 
 
-
-
 class TestNumericQuestion:
     def test_get_similarity(self, questions, answers, students):
-        pass
+        q1 = survey.NumericQuestion(1, 'aa', 100, 200)
+        a1 = survey.Answer(111)
+        a2 = survey.Answer(98)
+        a3 = survey.Answer(123)
+        a4 = survey.Answer(111)
+        a5 = survey.Answer(201)
+
+        assert q1.get_similarity(a1, a4) == 1.0
+        assert q1.get_similarity(a1, a2) is False
+        assert q1.get_similarity(a1, a3) == 0.88
+        assert q1.get_similarity(a1, a5) is False
 
 
 class TestCheckboxQuestion:
     def test_get_similarity(self, questions, answers, students):
-        pass
+        q1 = survey.CheckboxQuestion(1, 'C', ['a', 'b', 'c', 'd', 'e', 'f'])
+        a1 = survey.Answer(['a', 'b', 'c', 'd'])
+        a2 = survey.Answer(['e', 'b', 'c', 'f'])
+        a3 = survey.Answer(['a', 'b', 'c', 'd'])
+        a4 = survey.Answer(['g'])
+        a5 = survey.Answer([''])
+        a6 = survey.Answer([''])
+
+        assert q1.get_similarity(a1, a2) == 0.33
+        assert q1.get_similarity(a1, a3) == 1.0
+        assert q1.get_similarity(a1, a4) == 0.0
+        assert q1.get_similarity(a5, a6) == 1
 
 
 class TestYesNoQuestion:
