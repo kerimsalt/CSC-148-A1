@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e15dd14-639e-44e9-a829-eca97b4f0d6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cons.py" beforeDir="false" afterPath="$PROJECT_DIR$/cons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouper.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +19,10 @@
         <entry file="file://$PROJECT_DIR$/example_tests.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="-2296">
-                <caret line="203" column="20" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
+              <first_editor relative-caret-position="2470">
+                <caret line="130" column="21" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
               </first_editor>
-              <second_editor relative-caret-position="-57" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -28,8 +31,8 @@
         <entry file="file://$PROJECT_DIR$/cons.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="551">
-                <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <first_editor relative-caret-position="836">
+                <caret line="44" selection-start-line="44" selection-end-line="44" />
               </first_editor>
               <second_editor />
             </state>
@@ -45,10 +48,10 @@
         <entry file="file://$PROJECT_DIR$/example_usage.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="130">
+              <first_editor relative-caret-position="646">
                 <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
               </first_editor>
-              <second_editor relative-caret-position="-57" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -57,8 +60,8 @@
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="77">
-                <caret line="201" column="6" lean-forward="true" selection-start-line="201" selection-start-column="6" selection-end-line="201" selection-end-column="6" />
+              <first_editor relative-caret-position="170">
+                <caret line="299" column="43" selection-start-line="299" selection-start-column="43" selection-end-line="299" selection-end-column="43" />
               </first_editor>
               <second_editor relative-caret-position="-57" />
             </state>
@@ -66,11 +69,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/criterion.py">
+        <entry file="file://$PROJECT_DIR$/grouper.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="247">
-                <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+              <first_editor relative-caret-position="262">
+                <caret line="171" column="20" selection-start-line="171" selection-start-column="20" selection-end-line="171" selection-end-column="20" />
               </first_editor>
               <second_editor relative-caret-position="-57" />
             </state>
@@ -81,20 +84,8 @@
         <entry file="file://$PROJECT_DIR$/survey.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="128">
-                <caret line="126" column="22" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="22" />
-              </first_editor>
-              <second_editor relative-caret-position="-57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/course.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="2147">
-                <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
+              <first_editor relative-caret-position="7049">
+                <caret line="371" column="8" selection-start-line="371" selection-end-line="371" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -112,9 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_options</find>
-      <find>validate</find>
-      <find>_questions</find>
       <find>str</find>
       <find>_str</find>
       <find>class Q</find>
@@ -142,6 +130,9 @@
       <find>class Ans</find>
       <find>validate_answer</find>
       <find>def get_similarity</find>
+      <find>al</find>
+      <find>class Su</find>
+      <find>def sur</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,10 +143,10 @@
       <list>
         <option value="$PROJECT_DIR$/course.py" />
         <option value="$PROJECT_DIR$/criterion.py" />
-        <option value="$PROJECT_DIR$/cons.py" />
-        <option value="$PROJECT_DIR$/grouper.py" />
         <option value="$PROJECT_DIR$/example_tests.py" />
         <option value="$PROJECT_DIR$/survey.py" />
+        <option value="$PROJECT_DIR$/grouper.py" />
+        <option value="$PROJECT_DIR$/cons.py" />
         <option value="$PROJECT_DIR$/tests.py" />
       </list>
     </option>
@@ -163,8 +154,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-3" />
     <option name="y" value="-3" />
-    <option name="width" value="18" />
-    <option name="height" value="9" />
+    <option name="width" value="9" />
+    <option name="height" value="6" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -204,8 +195,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests.TestHomogeneousCriterion.test_score_answer">
-    <configuration name="pytest for tests.TestAnswer.test_is_valid" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for tests.TestAlphaGrouper.test_make_grouping">
+    <configuration name="cons" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSC-148-A1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cons.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for tests.TestAlphaGrouper.test_make_grouping" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="CSC-148-A1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -216,11 +228,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestAnswer.test_is_valid&quot;" />
+      <option name="_new_target" value="&quot;tests.TestAlphaGrouper.test_make_grouping&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.TestCheckboxQuestion.test_get_similarity" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.TestLonelyMemberCriterion.test_score_answer" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="CSC-148-A1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -231,11 +243,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestCheckboxQuestion.test_get_similarity&quot;" />
+      <option name="_new_target" value="&quot;tests.TestLonelyMemberCriterion.test_score_answer&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.TestHomogeneousCriterion.test_score_answer" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.test_slice_list" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="CSC-148-A1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,11 +258,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestHomogeneousCriterion.test_score_answer&quot;" />
+      <option name="_new_target" value="&quot;tests.test_slice_list&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.TestMultipleChoiceQuestion.test_get_similarity" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in tests.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="CSC-148-A1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,32 +273,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestMultipleChoiceQuestion.test_get_similarity&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for tests.TestNumericQuestion.test_get_similarity" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="CSC-148-A1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestNumericQuestion.test_get_similarity&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for tests.TestHomogeneousCriterion.test_score_answer" />
-        <item itemvalue="Python tests.pytest for tests.TestCheckboxQuestion.test_get_similarity" />
-        <item itemvalue="Python tests.pytest for tests.TestNumericQuestion.test_get_similarity" />
-        <item itemvalue="Python tests.pytest for tests.TestMultipleChoiceQuestion.test_get_similarity" />
-        <item itemvalue="Python tests.pytest for tests.TestAnswer.test_is_valid" />
+        <item itemvalue="Python tests.pytest for tests.TestAlphaGrouper.test_make_grouping" />
+        <item itemvalue="Python.cons" />
+        <item itemvalue="Python tests.pytest for tests.test_slice_list" />
+        <item itemvalue="Python tests.pytest in tests.py" />
+        <item itemvalue="Python tests.pytest for tests.TestLonelyMemberCriterion.test_score_answer" />
       </list>
     </recent_temporary>
   </component>
@@ -304,48 +301,48 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_tests_TestMultipleChoiceQuestion_test_get_similarity - 2020.07.27 at 05h 06m 50s.xml">
-      <configuration name="pytest for tests.TestMultipleChoiceQuestion.test_get_similarity" configurationId="tests" />
+    <history-entry file="pytest_in_tests_py - 2020.07.28 at 14h 56m 21s.xml">
+      <configuration name="pytest in tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestNumericQuestion_test_get_similarity - 2020.07.27 at 05h 18m 53s.xml">
-      <configuration name="pytest for tests.TestNumericQuestion.test_get_similarity" configurationId="tests" />
+    <history-entry file="pytest_for_tests_test_slice_list - 2020.07.28 at 14h 56m 43s.xml">
+      <configuration name="pytest for tests.test_slice_list" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestNumericQuestion_test_get_similarity - 2020.07.27 at 05h 19m 16s.xml">
-      <configuration name="pytest for tests.TestNumericQuestion.test_get_similarity" configurationId="tests" />
+    <history-entry file="pytest_for_tests_test_slice_list - 2020.07.28 at 15h 01m 53s.xml">
+      <configuration name="pytest for tests.test_slice_list" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestCheckboxQuestion_test_get_similarity - 2020.07.27 at 05h 27m 14s.xml">
-      <configuration name="pytest for tests.TestCheckboxQuestion.test_get_similarity" configurationId="tests" />
+    <history-entry file="pytest_for_tests_test_slice_list - 2020.07.28 at 15h 02m 10s.xml">
+      <configuration name="pytest for tests.test_slice_list" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestCheckboxQuestion_test_get_similarity - 2020.07.27 at 05h 29m 30s.xml">
-      <configuration name="pytest for tests.TestCheckboxQuestion.test_get_similarity" configurationId="tests" />
+    <history-entry file="pytest_for_tests_test_slice_list - 2020.07.28 at 15h 06m 17s.xml">
+      <configuration name="pytest for tests.test_slice_list" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestCheckboxQuestion_test_get_similarity - 2020.07.27 at 05h 32m 10s.xml">
-      <configuration name="pytest for tests.TestCheckboxQuestion.test_get_similarity" configurationId="tests" />
+    <history-entry file="pytest_for_tests_TestAlphaGrouper_test_make_grouping - 2020.07.31 at 10h 12m 29s.xml">
+      <configuration name="pytest for tests.TestAlphaGrouper.test_make_grouping" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestCheckboxQuestion_test_get_similarity - 2020.07.27 at 05h 32m 28s.xml">
-      <configuration name="pytest for tests.TestCheckboxQuestion.test_get_similarity" configurationId="tests" />
+    <history-entry file="pytest_for_tests_TestAlphaGrouper_test_make_grouping - 2020.07.31 at 10h 12m 59s.xml">
+      <configuration name="pytest for tests.TestAlphaGrouper.test_make_grouping" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestHomogeneousCriterion_test_score_answer - 2020.07.27 at 05h 58m 20s.xml">
-      <configuration name="pytest for tests.TestHomogeneousCriterion.test_score_answer" configurationId="tests" />
+    <history-entry file="pytest_for_tests_TestAlphaGrouper_test_make_grouping - 2020.07.31 at 10h 13m 09s.xml">
+      <configuration name="pytest for tests.TestAlphaGrouper.test_make_grouping" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestHomogeneousCriterion_test_score_answer - 2020.07.27 at 05h 59m 01s.xml">
-      <configuration name="pytest for tests.TestHomogeneousCriterion.test_score_answer" configurationId="tests" />
+    <history-entry file="pytest_for_tests_TestAlphaGrouper_test_make_grouping - 2020.07.31 at 10h 16m 05s.xml">
+      <configuration name="pytest for tests.TestAlphaGrouper.test_make_grouping" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_TestHomogeneousCriterion_test_score_answer - 2020.07.27 at 05h 59m 51s.xml">
-      <configuration name="pytest for tests.TestHomogeneousCriterion.test_score_answer" configurationId="tests" />
+    <history-entry file="pytest_for_tests_TestAlphaGrouper_test_make_grouping - 2020.07.31 at 10h 27m 35s.xml">
+      <configuration name="pytest for tests.TestAlphaGrouper.test_make_grouping" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16262136" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16181229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28014183" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3386525" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -359,27 +356,17 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15521424" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09042553" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32978722" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32978722" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32978722" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/grouper.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../csc148/assignments/a1/test_checkouts.py">
@@ -392,11 +379,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grouper.py">
+    <entry file="file://$PROJECT_DIR$/criterion.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="3610">
-            <caret line="190" selection-start-line="190" selection-end-line="190" />
+          <first_editor relative-caret-position="781">
+            <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+          </first_editor>
+          <second_editor relative-caret-position="-57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example_tests.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="2470">
+            <caret line="130" column="21" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
@@ -405,8 +402,8 @@
     <entry file="file://$PROJECT_DIR$/cons.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="551">
-            <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <first_editor relative-caret-position="836">
+            <caret line="44" selection-start-line="44" selection-end-line="44" />
           </first_editor>
           <second_editor />
         </state>
@@ -415,31 +412,11 @@
     <entry file="file://$PROJECT_DIR$/example_survey.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/example_tests.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-2296">
-            <caret line="203" column="20" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
-          </first_editor>
-          <second_editor relative-caret-position="-57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example_usage.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="130">
+          <first_editor relative-caret-position="646">
             <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-          </first_editor>
-          <second_editor relative-caret-position="-57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/course.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="2147">
-            <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
@@ -448,18 +425,28 @@
     <entry file="file://$PROJECT_DIR$/survey.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="128">
-            <caret line="126" column="22" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="22" />
+          <first_editor relative-caret-position="7049">
+            <caret line="371" column="8" selection-start-line="371" selection-end-line="371" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="273">
+            <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
           </first_editor>
           <second_editor relative-caret-position="-57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criterion.py">
+    <entry file="file://$PROJECT_DIR$/grouper.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="247">
-            <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <first_editor relative-caret-position="262">
+            <caret line="171" column="20" selection-start-line="171" selection-start-column="20" selection-end-line="171" selection-end-column="20" />
           </first_editor>
           <second_editor relative-caret-position="-57" />
         </state>
@@ -468,8 +455,8 @@
     <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="77">
-            <caret line="201" column="6" lean-forward="true" selection-start-line="201" selection-start-column="6" selection-end-line="201" selection-end-column="6" />
+          <first_editor relative-caret-position="170">
+            <caret line="299" column="43" selection-start-line="299" selection-start-column="43" selection-end-line="299" selection-end-column="43" />
           </first_editor>
           <second_editor relative-caret-position="-57" />
         </state>

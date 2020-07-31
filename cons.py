@@ -27,3 +27,18 @@ print('a' in d1)
 
 min1 = sys.maxsize * -1
 print(min1)
+
+print(divmod(3, 5)[1])
+print(30 % 6)
+
+lst14 = list(range(9))
+print(lst14[7:14])
+
+print(type(lst14[7:14]))
+
+d1 = {'a': 'b', '1': 2, '2': 1, 'c': 4, 'd': 3, '12': 6}
+d1.pop('2')
+print(list(d1.values()))
+i = 7
+if i:
+    print(True)

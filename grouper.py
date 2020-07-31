@@ -59,17 +59,27 @@ def slice_list(lst: List[Any], n: int) -> List[List[Any]]:
     if len(lst) == 0:
         return []
 
+    '''
     sl_lst = []
     i = 0
     num_slice = int(len(lst) / n)
-    if divmod(len(lst), n) != 0:
+    if (len(lst) % n) != 0:
         num_slice += 1
 
-    while i <= num_slice:
+    while i <= (num_slice * n):
         sl_lst.append(lst[i:i + n])
         i += n
+    list_of_reminders = list(lst[i:])
     sl_lst.append(lst[i:])
     return sl_lst
+    '''
+
+    result = []
+    for i in range(0, len(lst), n):
+        print(i)
+        print(i + n)
+        result.append(lst[i: i + n])
+    return result
 
 
 def windows(lst: List[Any], n: int) -> List[List[Any]]:
